@@ -1,0 +1,50 @@
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  id: 'cn.wenyu.bodian',
+  name: '波点音乐',
+  groups: [
+    {
+      key: 1,
+      name: '开屏广告',
+      desc: '波点音乐开屏广告',
+      rules: [
+        {
+          activityIds: 'cn.wenyu.bodian.MainActivity',
+          matches: '[id="cn.wenyu.bodian:id/skip_view_bg"] > TextView',
+          exampleUrls: ['https://i.gkd.li/snapshot/1773125973402'],
+          resetMatch: 'app',
+          matchTime: 1000,
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '底部弹出式充值&广告弹窗',
+      desc: '底部弹出式充值&广告弹窗',
+      rules: [
+        {
+          activityIds: 'cn.wenyu.bodian.MainActivity',
+          matches: '[id="android:id/content"] >4 ImageView[left=951]',
+          exampleUrls: ['https://i.gkd.li/snapshot/1773125980390'],
+          resetMatch: 'app',
+          matchTime: 1000,
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '右侧常驻vip充值广告',
+      desc: '右侧常驻vip充值广告',
+      rules: [
+        {
+          activityIds: 'cn.wenyu.bodian.MainActivity',
+          matches: '[id="android:id/content"] >8 ImageView[right=1053]',
+          exampleUrls: ['https://i.gkd.li/snapshot/1773125986949'],
+          resetMatch: 'app',
+          matchTime: 1000,
+        },
+      ],
+    },
+  ],
+});
