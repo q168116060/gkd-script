@@ -12,7 +12,7 @@ export default defineGkdApp({
         {
           activityIds: 'cn.com.sina.finance.start.ui.LoadingActivity',
           matches: '[id="android:id/content"] >4 LinearLayout[clickable=true]',
-          exampleUrls: ['https://i.gkd.li/snapshot/1773125973402'],
+          exampleUrls: ['https://i.gkd.li/snapshot/1773131021551'],
           resetMatch: 'app',
           matchTime: 10000,
         },
