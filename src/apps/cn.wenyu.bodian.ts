@@ -38,12 +38,18 @@ export default defineGkdApp({
       desc: '右侧常驻vip充值广告',
       rules: [
         {
+          matchRoot: true,
           activityIds: 'cn.wenyu.bodian.MainActivity',
-          matches: [
-            '[id="android:id/content"] >8 ImageView[right=1053]',
-            '[id="android:id/content"] >6 ImageView[left=1008]',
-          ],
+          matches: '[id="android:id/content"] >8 ImageView[right=1053]',
           exampleUrls: ['https://i.gkd.li/snapshot/1773125986949'],
+          resetMatch: 'app',
+          matchTime: 10000,
+        },
+        {
+          matchRoot: true,
+          activityIds: 'cn.wenyu.bodian.MainActivity',
+          matches: '[id="android:id/content"] >6 ImageView[left=1008]',
+          exampleUrls: ['https://i.gkd.li/snapshot/1773191155099'],
           resetMatch: 'app',
           matchTime: 10000,
         },
