@@ -55,5 +55,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 4,
+      name: '居中弹出式vip领取广告',
+      desc: '居中弹出式vip领取广告',
+      rules: [
+        {
+          matchRoot: true,
+          activityIds: 'cn.wenyu.bodian.MainActivity',
+          matches: 'View[desc="狠心放弃"]',
+          resetMatch: 'app',
+          matchTime: 10000,
+          exampleUrls: ['https://i.gkd.li/snapshot/1773278171060'],
+        },
+      ],
+    },
   ],
 });
