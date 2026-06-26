@@ -16,6 +16,12 @@ export default defineGkdApp({
           resetMatch: 'app',
           matchTime: 10000,
         },
+        {
+          activityIds: 'cn.com.sina.finance.start.ui.LoadingActivity',
+          matches: '[id="cn.com.sina.finance:id/sax_skip_background"]',
+          resetMatch: 'app',
+          matchTime: 10000,
+        },
       ],
     },
   ],
